@@ -1,0 +1,11 @@
+封装node http server 和创建Koa类构造函数
+
+
+koa源码中的request.js和response.js是用来封装request和response模块对象的。
+而context。js是用来对常用的request和response方法进行挂载和代理的。当需要添加更多的res和req方法时。
+可以向context.js文件里面的数组对象里添加对应的方法名和属性名。
+将request和response所有方法挂载到context下面的。让context实现他的承上启下的作用。这是application.js的一部分作用createContext
+
+
+
+
